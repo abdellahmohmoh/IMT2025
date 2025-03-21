@@ -87,7 +87,6 @@ int main() {
                   << spacer << "NPV" << spacer << "time [s]"
                   << spacer << "NPV" << spacer << "time [s]"
                   << std::endl;
-        std::cout << std::string(5, ' ') << std::string(100, '-') << std::endl;
 
         Size timeSteps = 10;
         Size samples = 1000000;
@@ -120,6 +119,7 @@ int main() {
             .withSamples(samples)
             .withSeed(mcSeed)
             .withConstantParameters(false)
+
         );
 
         startTime = std::chrono::steady_clock::now();
@@ -266,7 +266,6 @@ int main() {
         us = std::chrono::duration_cast<std::chrono::microseconds>(endTime - startTime).count();
 
         std::cout << spacer << NPV << spacer << us / 1000000 << std::endl;
-        std::cout << std::endl;
 
         // All done
 

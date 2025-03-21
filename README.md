@@ -1,5 +1,5 @@
 
-# Introduction to QuantLib - IMT 2025
+# Introduction to QuantLib - IMT 2023
 
 ## Coding project: use constant parameters in Monte Carlo engines
 
@@ -26,13 +26,13 @@ new constant process.**
 
 After your modifications:
 
-1. **Compare the results** (value, elapsed time) obtained with and without
+1. Compare the results (value, elapsed time) obtained with and without
    constant parameters.  The value with non-constant parameters should
    be the same returned from the original engine in QuantLib.  The
    value with constant parameters should be similar but not identical,
    and hopefully the elapsed time should decrease.
 
-2. **Try to avoid duplication** between the three engines that you are
+2. Try to avoid duplication between the three engines that you are
    modifying (European, Asian, barrier).  Ideally, some of the
    additional code (for instance, extracting the constant parameters
    based on exercise date and strike) should be written just once.
@@ -47,7 +47,7 @@ at <https://www.quantlib.org/install.shtml>.
 1. Get a GitHub account, if you don't have one already.
 2. Clone this repository with the "Fork" button in the top right
    corner of the page (if you're not reading this on GitHub, go to
-   <https://github.com/lballabio/IMT2025> first).
+   <https://github.com/lballabio/IMT2023> first).
 3. Check out your clone on your machine.
 4. Modify the source files as required by the project.  Feel free to
    add any other file you might need. You can also add your report.
